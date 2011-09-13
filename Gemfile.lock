@@ -30,6 +30,7 @@ GEM
       activesupport (= 3.1.0)
     activesupport (3.1.0)
       multi_json (~> 1.0)
+    annotate (2.4.0)
     arel (2.2.1)
     bcrypt-ruby (3.0.0)
     builder (3.0.0)
@@ -126,9 +127,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate (~> 2.4.0)
   coffee-rails (~> 3.1.0)
   jquery-rails
   rails (= 3.1.0)
+  rake (~> 0.9.1)
   rspec (= 2.0.0)
   rspec-rails (= 2.0.0)
   sass-rails (~> 3.1.0)
