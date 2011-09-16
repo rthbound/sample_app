@@ -11,6 +11,7 @@ gem "therubyracer", "~> 0.9.4"
 gem "annotate", "~> 2.4.0"
 gem "gravatar", "~> 1.0"
 gem "gravatar_image_tag", "~> 1.0.0"
+gem "will_paginate", '3.0.0'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -33,6 +34,7 @@ gem 'jquery-rails'
 
 group :development do
   gem 'rspec-rails', '2.0.0'
+  gem 'faker', '0.3.1'
 end
 
 group :test do

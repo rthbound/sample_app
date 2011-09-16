@@ -2,6 +2,15 @@
 width: 710px;
 }
 
+u1.users {
+  margin-top: 1em;
+}                   
+
+.users li {
+  list-style: none;
+}
+
+
 /* Navigation */
 nav {
 float: right;
@@ -155,4 +164,3 @@ padding: 5px;
 font-size: 12px;
 list-style: square;
 }
-
