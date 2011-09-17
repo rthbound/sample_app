@@ -24,6 +24,7 @@ class UsersController < ApplicationController
   ############cRud################
   def show
     @user = User.find(params[:id])
+    @microposts = @user.microposts.paginate(:page => params[:page])
     @title = @user.name
   end
   def index
@@ -51,8 +52,9 @@ class UsersController < ApplicationController
     User.find(params[:id]).destroy
     flash[:success] = "Ya killed it. Fun, huh? All humans must die."
     redirect_to users_path
+  end
   private
-
+  #### not DRY, but code was failing to share with sessions_helper as specified in ApplicationController
     def authenticate
       deny_access unless signed_in?
     end
